@@ -119,7 +119,7 @@ for 300 epochs at 224×224 with an identical recipe; the only thing that
 differs between checkpoints is the positional-encoding implementation
 and the random seed). The full set (~3.8 GB) is hosted on Google Drive:
 
-- **Our ImageNet-100 ViT-Base models:** `https://drive.google.com/drive/folders/1WRhjaR3WZHIi2fTi9xcrIBJkBXZddMM9` *(set before publishing the repo; folder visibility must be "Anyone with the link can view")*
+- **Our ImageNet-100 ViT-Base models:** [drive.google.com/.../1WRhjaR3WZHIi2fTi9xcrIBJkBXZddMM9](https://drive.google.com/drive/folders/1WRhjaR3WZHIi2fTi9xcrIBJkBXZddMM9)
 
 The folder layout expected by `model_loader.py` is:
 
