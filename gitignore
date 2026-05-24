@@ -1,0 +1,95 @@
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# =============================================================================
+# Large experiment artefacts (hosted on Google Drive / Zenodo, not in Git)
+# =============================================================================
+
+# Trained model checkpoints (~3 GB total)
+*.pth
+*.pt
+*.ckpt
+
+# Downstream features (~4 GB; 12 models × 5 datasets)
+features/**/*.npz
+
+# CKA per-layer features (a few hundred MB per stimulus seed)
+cka_features/**/*.npz
+cka_features_seed*/**/*.npz
+
+# Raw downloaded datasets (auto-downloaded by torchvision; can be huge)
+datasets/
+data_root/
+
+# ImageNet tar / extracted val (governed by ImageNet terms of access)
+*.tar
+imagenet100/
+imagenet/
+
+# =============================================================================
+# Keep tracked: small result files + paper-quality figures
+# =============================================================================
+# The negations below ensure the actual results stay in Git even though the
+# patterns above are broad. Order matters — these must come AFTER the broader
+# *.npz rules.
+
+!results/linear_probe.json
+!results/knn.json
+!results/analysis/*.csv
+
+!cka_analysis/cka_summary.csv
+!cka_analysis/cka_results.npz
+!cka_analysis/cka_heatmap.pdf
+!cka_analysis/cka_heatmap.png
+!cka_analysis_seed*/cka_summary.csv
+!cka_analysis_seed*/cka_results.npz
+
+# =============================================================================
+# Editors / IDEs
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.spyderproject
+.spyproject
+
+# =============================================================================
+# OS junk
+# =============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =============================================================================
+# Local-only scratch
+# =============================================================================
+scratch/
+tmp/
+*.log
