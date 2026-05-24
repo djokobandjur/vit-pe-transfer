@@ -29,7 +29,7 @@ The two main findings are:
 
 | Claim | One-line summary |
 | --- | --- |
-| **C1 (primary)** | Transfer ranking **RoPE > Sinusoidal > ALiBi > Learned** is consistent across all five downstream datasets and both probing protocols. Largest gap: +8.6 p.p. on Oxford Pets (RoPE vs Learned). |
+| **C1 (primary)** | **RoPE consistently leads and Learned consistently trails** across all five downstream datasets and both probing protocols (linear probe and k-NN); the mean ordering is **RoPE > Sinusoidal > ALiBi > Learned**, with the relative position of the two middle families varying between protocols. Largest gap: +8.6 p.p. on Oxford Pets (RoPE vs Learned). |
 | **C2 (supporting)** | Cross-PE representational divergence is **not monotone in depth**: it peaks at transformer block 9 of 12 (CKA ≈ 0.69–0.72), then partially rebounds at the final block. The peak layer is invariant to the choice of stimulus image set. |
 
 The two findings together are consistent with a depth-dependent
@@ -119,7 +119,7 @@ for 300 epochs at 224×224 with an identical recipe; the only thing that
 differs between checkpoints is the positional-encoding implementation
 and the random seed). The full set (~3.8 GB) is hosted on Google Drive:
 
-- **Our ImageNet-100 ViT-Base models:** `<INSERT_DRIVE_SHARE_LINK_HERE>` *(set before publishing the repo; folder visibility must be "Anyone with the link can view")*
+- **Our ImageNet-100 ViT-Base models:** `https://drive.google.com/drive/folders/1WRhjaR3WZHIi2fTi9xcrIBJkBXZddMM9` *(set before publishing the repo; folder visibility must be "Anyone with the link can view")*
 
 The folder layout expected by `model_loader.py` is:
 
@@ -375,9 +375,9 @@ beyond what is covered in *Prerequisites*:
   `--val_dir` (where applicable).
 
 - **GPU memory.** Feature extraction is the only step that benefits from
-  a high-memory GPU; with batch size 128 the full downstream pipeline
-  fits on a single 24 GB card. Linear probe, k-NN, and CKA computation
-  are CPU-friendly.
+  a high-memory GPU. Linear probe, k-NN, and CKA computation are
+  CPU-friendly. If you hit out-of-memory on your card, reduce
+  `--batch_size` (default 128).
 
 - **Hardware reported in the paper.** Pretraining used a mixed pool of
   H100 and A100 sessions. Downstream evaluation and CKA analysis used a
