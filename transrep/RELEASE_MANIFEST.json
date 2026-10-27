@@ -10,5 +10,15 @@
   "manuscript_included": false,
   "supplementary_article_included": false,
   "section_4_2_individual_30_rows_included": false,
-  "zenodo_v1_1_deposition_verified": false
+  "zenodo_v1_1_deposition_verified": true,
+  "zenodo_version_doi": "10.5281/zenodo.23696781",
+  "zenodo_record_url": "https://zenodo.org/records/23696781",
+  "zenodo_version": "1.1.0",
+  "zenodo_file_md5": "c5e221cf58aa1aec971ced849cdd8598",
+  "zenodo_verification_basis": "Published record screenshot showing version 1.1.0 and archive filename; Zenodo file MD5 independently matches the local release archive (2026-10-27).",
+  "creators": [
+    "Đoko Banđur",
+    "Miloš Banđur",
+    "Aleksandar Mićić"
+  ]
 }
