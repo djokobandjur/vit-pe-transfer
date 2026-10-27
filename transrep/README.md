@@ -4,7 +4,7 @@ This directory indexes **experimental results and reproducibility code only** fo
 
 **Zenodo all-versions DOI:** https://doi.org/10.5281/zenodo.20368592
 
-**Prepared next-version archive:** `TRANSREP_EXPERIMENTAL_REPRODUCIBILITY_v1.1_2026-10-27.zip`. The ZIP is prepared and independently checked, but the DOI must **not** be cited as proof that these exact v1.1 bytes have been deposited until Zenodo's version/file listing is updated and verified.
+**Published numerical archive (Zenodo v1.1.0):** [`TRANSREP_EXPERIMENTAL_REPRODUCIBILITY_v1.1_2026-10-27.zip`](https://zenodo.org/records/23696781). **Version DOI:** https://doi.org/10.5281/zenodo.23696781. The archive's displayed MD5 (`c5e221cf58aa1aec971ced849cdd8598`) matches the locally verified release ZIP.
 
 ## Evidence
 
@@ -18,7 +18,7 @@ The source figure package generates five main and one supplementary scientific p
 
 ## Replay
 
-After downloading and extracting the prepared v1.1 **Zenodo ZIP** (once published), run:
+After downloading and extracting the published v1.1 **Zenodo ZIP**, run:
 
 ```bash
 cd TRANSREP_experimental_reproducibility_v1.1
@@ -26,7 +26,7 @@ python -m pip install numpy==2.3.5
 python scripts/verify_release.py
 ```
 
-The current ZIP contains **2,760 verified files** and a full `SHA256SUMS` manifest. For figure reproduction see `figures/README.md` and its pinned `requirements.txt`. No source images or model weights are required for numerical reaggregation.
+The published ZIP contains **2,760 verified payload files** and a full `SHA256SUMS` manifest. For figure reproduction see `figures/README.md` and its pinned `requirements.txt`. No source images or model weights are required for numerical reaggregation.
 
 The exploratory checkpoint-matching analysis in Section 4.2 has **task-level summaries**, but the original 30 per-pair records are not included. Large source CKA activation arrays, datasets and full trained-model weights are also excluded; relevant identities are in metadata. See [REPRODUCIBILITY_SCOPE.md](REPRODUCIBILITY_SCOPE.md).
 
