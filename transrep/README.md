@@ -1,6 +1,6 @@
 # Transferable Representations — experimental reproducibility
 
-This directory indexes **experimental results and reproducibility code only** for *Interpreting Frozen-Feature Transfer in Vision Transformers: Positional Encoding and Checkpoint Alignment* (Đoko Banđur and Miloš Banđur). No manuscript, supplementary article, cover letter, or internal editorial document is included.
+This directory indexes **experimental results and reproducibility code only** for *Interpreting Frozen-Feature Transfer in Vision Transformers: Positional Encoding and Checkpoint Alignment* (Đoko Banđur, Miloš Banđur and Aleksandar Mićić). No manuscript, supplementary article, cover letter, or internal editorial document is included.
 
 **Zenodo all-versions DOI:** https://doi.org/10.5281/zenodo.20368592
 
