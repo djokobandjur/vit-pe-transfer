@@ -3,12 +3,20 @@ under the MIT License (Part I below). Result files (JSON, CSV, NPZ),
 generated figures, documentation, notebooks rendered for reading, and
 the Zenodo deposit of this repository are released under the
 Creative Commons Attribution 4.0 International License (Part II below).
-Trained model checkpoints hosted on Google Drive are released under
-CC BY 4.0 for research purposes; ImageNet-100 checkpoints remain subject
-to the ImageNet terms of access (https://www.image-net.org/download.php)
-for any redistribution or commercial use.
+The twelve historical ViT-Base checkpoint binaries are hosted externally and
+are not contained in this GitHub repository or the Zenodo TRANSREP numerical
+archive. The historical v1.0.x README/Licence stated "CC BY 4.0 for research
+purposes" for those weights; this combination is inconsistent because CC BY
+4.0 permits commercial use. The historical license notices remain accessible
+through release tag v1.0.1. Nothing here purports to rescind rights granted
+by a prior CC BY license, to newly relicense the weights as CC BY-NC, or to
+resolve separate ImageNet dataset access obligations. Redistribution/use of
+the separately hosted weights requires an independent check of original
+licenses, third-party rights, and the ImageNet access agreement:
+https://image-net.org/accessagreement
 
-See the "License" section of README.md for the full scope of each part.
+See the current README.md and transrep/LICENSE.md for the scope of the
+software and numerical artifacts in this repository.
 
 ================================================================================
 PART I — MIT License (source code)
@@ -40,10 +48,12 @@ PART II — Creative Commons Attribution 4.0 International (results, figures, do
 
 Copyright (c) 2026 Djoko Bandjur, Milos Bandjur, and Aleksandar Micic
 
-The result files, generated figures, documentation, and trained model
-checkpoints associated with this repository (collectively, the "Materials")
-are licensed under the Creative Commons Attribution 4.0 International
-License. To view a copy of this license, visit:
+The original authors' result files, generated figures, and documentation
+contained in this repository (collectively, the "Materials") are licensed
+under the Creative Commons Attribution 4.0 International License. The
+separately hosted historical checkpoint binaries are not part of this
+newly stated license scope; consult the original v1.0.x notices and
+third-party terms as explained above. To view a copy of this license, visit:
 
     https://creativecommons.org/licenses/by/4.0/
 
@@ -67,6 +77,8 @@ Notices
 
 ImageNet-1k validation images used to reproduce the ImageNet-100 experiments
 are governed by the ImageNet terms of access and are not redistributed in
-this repository. ImageNet-100 trained model checkpoints are derivative
-artifacts of ImageNet-1k and remain subject to those terms for any
-redistribution or commercial use.
+this repository. The status of separately hosted ImageNet-100 checkpoint weights cannot be
+inferred from this text alone. The ImageNet access agreement restricts use
+of its image database. Independently check applicable terms before using
+or transferring those weights; this document is not a new commercial or
+non-commercial checkpoint license grant and does not alter historical grants.
