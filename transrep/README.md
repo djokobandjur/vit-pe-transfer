@@ -8,7 +8,7 @@ This directory indexes **experimental results and reproducibility code only** fo
 
 ## Evidence
 
-- **Endpoint ImageNet-100:** four PE families × six ViT-Base models = 24 endpoints. Three seeds per family originate in the prior TPAMI study, and three further seeds per family extend the cohort under the same recipe.
+- **Endpoint ImageNet-100:** four PE families × six ViT-Base models = 24 endpoints. Three seeds per family come from the earlier three-seed experimental record, and three further seeds per family extend the cohort under the same recipe.
 - **Longitudinal ImageNet-100:** six Learned and six RoPE training runs, 360 upstream measurements, 805 frozen-feature downstream records and 90 run-level primary comparisons at aligned accuracy.
 - **External ImageNet-1k:** nine fixed public DeiT-III model variants (Small/Base/Large × APE/Axial/Mixed 2D RoPE); 45 downstream prediction records.
 - **Layerwise/CKA:** 24 models, 13 readouts, 3,588 stored pairwise CKA values and 78 excess-divergence aggregates.
