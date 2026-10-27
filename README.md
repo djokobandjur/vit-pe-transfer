@@ -1,5 +1,13 @@
 # How Positional Encoding Shapes Transferable Representations in Vision Transformers
 
+## Extended numerical evidence: TRANSREP
+
+The [`transrep/`](transrep/) directory indexes the **extended six-seed endpoint, longitudinal, fixed public ImageNet-1k, depth/CKA and exploratory DeiT–Swin numerical evidence**. The archived experimental data and reproduction scripts are prepared as a versioned Zenodo bundle, with no manuscript or supplementary article files.
+
+This extended evidence is distinct from the original **three-seed-per-family** study documented below; the historical code, results and attribution are preserved. The all-versions Zenodo DOI is [10.5281/zenodo.20368592](https://doi.org/10.5281/zenodo.20368592). Consult its version record to verify when the TRANSREP numerical bundle is added.
+
+---
+
 [![Paper Status](https://img.shields.io/badge/paper-under%20submission-orange)](#paper-and-citation)
 [![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-yellow.svg)](LICENSE)
 [![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
