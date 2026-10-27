@@ -1,0 +1,14 @@
+{
+  "release_title": "TRANSREP numerical reproducibility package",
+  "release_version": "1.1",
+  "prepared_on": "2026-10-27",
+  "zenodo_concept_doi": "10.5281/zenodo.20368592",
+  "archive_filename": "TRANSREP_EXPERIMENTAL_REPRODUCIBILITY_v1.1_2026-10-27.zip",
+  "archive_size_bytes": 15770294,
+  "archive_sha256": "c15091e9f72d2f998adbc612f291f8ae60a99ef8d905c815ba2b6e415ba1a1b2",
+  "files_sha256_verified": 2760,
+  "manuscript_included": false,
+  "supplementary_article_included": false,
+  "section_4_2_individual_30_rows_included": false,
+  "zenodo_v1_1_deposition_verified": false
+}
