@@ -18,7 +18,7 @@ def check(path):
             member = top + relative
             observed = hashlib.sha256(z.read(member)).hexdigest()
             assert observed == expected, relative
-        assert len(checks) == 2759, f"Unexpected release size: {len(checks)}"
+        assert len(checks) == 2760, f"Unexpected release size: {len(checks)}"
         forbidden = ("manuscript_", "cover_letter", "supplement_v", "internal_")
         assert not any(any(t in name.lower() for t in forbidden) for name in z.namelist())
         print(f"PASS: {len(checks)} members, ZIP CRC, SHA-256 and publication-file exclusion")
