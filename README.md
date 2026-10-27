@@ -2,9 +2,9 @@
 
 ## Extended numerical evidence: TRANSREP
 
-The [`transrep/`](transrep/) directory indexes the **extended six-seed endpoint, longitudinal, fixed public ImageNet-1k, depth/CKA and exploratory DeiT–Swin numerical evidence**. The archived experimental data and reproduction scripts are prepared as a versioned Zenodo bundle, with no manuscript or supplementary article files.
+The [`transrep/`](transrep/) directory indexes the **extended six-seed endpoint, longitudinal, fixed public ImageNet-1k, depth/CKA and exploratory DeiT–Swin numerical evidence**. The experimental data and reproduction scripts have been deposited in a versioned Zenodo bundle, with no manuscript or supplementary article files.
 
-This extended evidence is distinct from the original **three-seed-per-family** study documented below; the historical code, results and attribution are preserved. The all-versions Zenodo DOI is [10.5281/zenodo.20368592](https://doi.org/10.5281/zenodo.20368592). Consult its version record to verify when the TRANSREP numerical bundle is added.
+This extended evidence is distinct from the original **three-seed-per-family** study documented below; the historical code, results and attribution are preserved. The all-versions Zenodo DOI is [10.5281/zenodo.20368592](https://doi.org/10.5281/zenodo.20368592); the published TRANSREP numerical v1.1.0 archive has version DOI [10.5281/zenodo.23696781](https://doi.org/10.5281/zenodo.23696781).
 
 ---
 
