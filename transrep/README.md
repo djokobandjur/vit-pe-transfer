@@ -14,7 +14,7 @@ This directory indexes **experimental results and reproducibility code only** fo
 - **Layerwise/CKA:** 24 models, 13 readouts, 3,588 stored pairwise CKA values and 78 excess-divergence aggregates.
 - **Exploratory DeiT–Swin model systems:** 12 common-cache upstream prediction arrays (50,000 images each) and 60 downstream model-task prediction arrays. This is not an isolated positional-encoding test.
 
-The source figure package generates five main and one supplementary scientific plot from saved numeric records.
+The source figure package generates five main and one supplementary scientific plot from saved numeric records. [A section/figure → exact archived-file map](RESULTS_MAP.md) links each result to the deposited ZIP.
 
 ## Replay
 
@@ -30,4 +30,4 @@ The published ZIP contains **2,760 verified payload files** and a full `SHA256SU
 
 The exploratory checkpoint-matching analysis in Section 4.2 has **task-level summaries**, but the original 30 per-pair records are not included. Large source CKA activation arrays, datasets and full trained-model weights are also excluded; relevant identities are in metadata. See [REPRODUCIBILITY_SCOPE.md](REPRODUCIBILITY_SCOPE.md).
 
-The existing [repository root README](../README.md) documents the earlier three-seed study, which is preserved unchanged in scope. Original historical authorship and licensing remain in force for that material.
+The [repository root README](../README.md) now summarizes the current TRANSREP evidence. The historical three-seed study remains available at the immutable [v1.0.1 GitHub tag](https://github.com/djokobandjur/vit-pe-transfer/tree/v1.0.1) and [Zenodo v1.0.1](https://doi.org/10.5281/zenodo.20368593). Historical authorship and previously granted licenses are not rescinded.
