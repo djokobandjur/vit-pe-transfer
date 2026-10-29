@@ -21,6 +21,12 @@ This repository now indexes the numerical records for **“Interpreting Frozen-F
 
 These observations describe the specific evaluated model cohorts and comparison rules. Detailed definitions of metrics, seed labels, uncertainty and reproducibility boundaries appear in the archived numerical records.
 
+## v1.2.0 data-release preparation (not yet on Zenodo)
+
+The next version adds the original six locked §4.2 checkpoint pairs and 30 downstream contrasts; independent Pets Welch results; complete S2d and last-crossing sensitivities; corrected Figure 3d and reconstructed Figure S2 sources; and 120 original k-NN per-model records plus scripts. The **v1.2.0 ZIP is verified and prepared**, but has **not yet been deposited on Zenodo**. Until publication, v1.1.0 remains the latest public version.
+
+See the [v1.2.0 preparation manifest](transrep/RELEASE_1.2.0_PREPARATION.md) and [v1.2.0 results-to-files map](transrep/RESULTS_MAP_1.2.0.md). The actual new Zenodo version DOI will be recorded after publication; no unassigned DOI is cited here.
+
 ## Find the numerical evidence
 
 Download `TRANSREP_EXPERIMENTAL_REPRODUCIBILITY_v1.1_2026-10-27.zip` from the [Zenodo version record](https://zenodo.org/records/23696781). The ZIP includes archived observations, model identities and checksums, reaggregation scripts, and data/code for five scientific figures plus one supplemental figure. The ZIP contains neither journal manuscript nor supplementary article.
