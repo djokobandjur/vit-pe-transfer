@@ -1,0 +1,28 @@
+{
+  "release_version": "1.2.0",
+  "release_status": "prepared_not_published",
+  "prepared_on": "2026-10-29",
+  "archive_filename": "TRANSREP_EXPERIMENTAL_REPRODUCIBILITY_v1.2.0_RELEASE_READY_2026-10-29.zip",
+  "archive_size_bytes": 17139017,
+  "archive_sha256": "df56bc0b5fafed4c2198fcb63782153be9376422a22cf9dcecdf1412ea559fd5",
+  "archive_md5": "7c5a46ddbf09b8657d64361b515ed69c",
+  "verified_payload_files": 2916,
+  "zenodo_previous_version": "1.1.0",
+  "zenodo_previous_version_doi": "10.5281/zenodo.23696781",
+  "zenodo_concept_doi": "10.5281/zenodo.20368592",
+  "zenodo_new_version_doi": null,
+  "creators": [
+    "Đoko Banđur",
+    "Miloš Banđur",
+    "Aleksandar Mićić"
+  ],
+  "manuscript_included": false,
+  "supplementary_article_included": false,
+  "checkpoint_weights_included": false,
+  "source_images_included": false,
+  "m4_seed_level_included": true,
+  "knn_s4_source_included": true,
+  "g4_welch_included": true,
+  "g5_s2d_and_last_crossing_included": true,
+  "k1_source_graphics_included": true
+}
