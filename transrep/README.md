@@ -6,6 +6,10 @@ This directory indexes **experimental results and reproducibility code only** fo
 
 **Published numerical archive (Zenodo v1.1.0):** [`TRANSREP_EXPERIMENTAL_REPRODUCIBILITY_v1.1_2026-10-27.zip`](https://zenodo.org/records/23696781). **Version DOI:** https://doi.org/10.5281/zenodo.23696781. The archive's displayed MD5 (`c5e221cf58aa1aec971ced849cdd8598`) matches the locally verified release ZIP.
 
+## Next version: v1.2.0 (prepared, not yet deposited)
+
+The complete v1.2.0 archive is staged for a new version of the existing Zenodo record, with §4.2 six-pair/30-row sources, Pets independent Welch, 15/15 S2d and last-crossing records, corrected K1 figure sources, and k-NN Table S4 source JSONs and scripts. This is **not** yet the public v1.1.0 archive. See [v1.2.0 preparation and checksum](RELEASE_1.2.0_PREPARATION.md) and [v1.2.0 results map](RESULTS_MAP_1.2.0.md).
+
 ## Evidence
 
 - **Endpoint ImageNet-100:** four PE families × six ViT-Base models = 24 endpoints. Three seeds per family come from the earlier three-seed experimental record, and three further seeds per family extend the cohort under the same recipe.
