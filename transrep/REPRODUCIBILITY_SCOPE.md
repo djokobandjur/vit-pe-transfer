@@ -1,5 +1,7 @@
 # Reproducibility scope — numerical v1.2.0
 
+Published Zenodo version: https://doi.org/10.5281/zenodo.23986036; all-versions DOI: https://doi.org/10.5281/zenodo.20368592.
+
 The released ZIP supports independently verifying file checksums, reaggregating saved individual model predictions and downstream metrics, reconstructing figures, and checking stored training-history metadata, without source images or GPUs.
 
 **Included:** observations for 24 ImageNet-100 ViT-B endpoints, six-pair endpoint matching (30 individual downstream values), 360 H200 longitudinal upstream measurements, 805 downstream probes, twelve complete 300-epoch H200 training histories and twelve checkpoint audit records, six historical RoPE training histories, original 120 k-NN results, nine public-model downstream prediction sets (45 model–task records), 3,588 CKA pairwise similarities, 78 depth/CKA aggregates, and exploratory 12-model DeiT–Swin records. Supplementary sensitivity summaries and figure reconstruction programs are included.
