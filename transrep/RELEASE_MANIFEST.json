@@ -15,12 +15,16 @@
   "section_4_2_individual_30_rows_included": true,
   "longitudinal_training_histories_included": 12,
   "original_rope_training_histories_included": 6,
-  "zenodo_v1_2_deposition_verified": false,
-  "zenodo_version_doi": null,
-  "zenodo_record_url": null,
+  "zenodo_v1_2_deposition_verified": true,
+  "zenodo_version_doi": "10.5281/zenodo.23986036",
+  "zenodo_record_url": "https://zenodo.org/records/23986036",
   "creators": [
     "Đoko Banđur",
     "Miloš Banđur",
     "Aleksandar Mićić"
-  ]
+  ],
+  "zenodo_version": "1.2.0",
+  "publication_date": "2026-11-05",
+  "zenodo_file_md5": "ff3db9d93707315d99f35408eb007bf1",
+  "verification_basis": "User-provided published Zenodo record screenshot displaying version 1.2.0 and DOI 10.5281/zenodo.23986036; uploaded ZIP MD5 shown by Zenodo matched locally verified ZIP. Direct Zenodo API verification was not available."
 }
