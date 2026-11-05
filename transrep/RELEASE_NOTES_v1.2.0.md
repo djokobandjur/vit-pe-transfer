@@ -1,6 +1,6 @@
 # Numerical reproducibility v1.2.0 — notes for a new Zenodo version
 
-**Staging document:** the package is validated locally; a version DOI has not yet been issued.
+**Published 5 November 2026:** [Zenodo numerical archive v1.2.0](https://doi.org/10.5281/zenodo.23986036) (version DOI `10.5281/zenodo.23986036`; all-versions DOI `10.5281/zenodo.20368592`).
 
 The numerical ZIP supersedes v1.1.0 **for offline reaggregation of the extended analysis**, preserving the historical release.
 
@@ -18,4 +18,4 @@ Run `python scripts/verify_release.py` and `python scripts/verify_training_histo
 
 ### Scope and citation
 
-Only numerical evidence and analysis code are distributed, without source images, model weight binaries, manuscript or supplement. Publish as a **new version of the existing Zenodo deposit** with concept DOI https://doi.org/10.5281/zenodo.20368592. After publication insert the **new version-specific DOI** in the GitHub release/citation documentation; do not use the previous v1.1.0 version DOI to identify v1.2.0.
+Only numerical evidence and analysis code are distributed, without source images, model weight binaries, manuscript or supplement. This numerical ZIP was published as a new version of the existing Zenodo deposit. Cite the version DOI **10.5281/zenodo.23986036** for v1.2.0; the concept DOI remains https://doi.org/10.5281/zenodo.20368592. The previous v1.1.0 version DOI identifies only that earlier release.
