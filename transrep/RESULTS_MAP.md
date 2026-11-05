@@ -1,6 +1,6 @@
 # Scientific results → numerical v1.2.0 archive
 
-**Staging map:** numerical archive v1.2.0 is prepared, with version DOI pending publication. Existing Zenodo concept DOI: https://doi.org/10.5281/zenodo.20368592. The paths below are **inside** the extracted `TRANSREP_experimental_reproducibility_v1.2.0/` directory, not GitHub paths.
+**Published archive:** [Zenodo v1.2.0](https://doi.org/10.5281/zenodo.23986036), version DOI `10.5281/zenodo.23986036`. Existing Zenodo concept DOI: https://doi.org/10.5281/zenodo.20368592. The paths below are **inside** the extracted `TRANSREP_experimental_reproducibility_v1.2.0/` directory, not GitHub paths.
 
 | Evidence in article | Source in the numerical ZIP | Scope |
 | --- | --- | --- |
