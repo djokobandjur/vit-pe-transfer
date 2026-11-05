@@ -2,10 +2,11 @@
 
 **Experimental numerical evidence and analysis code, not a manuscript repository.** Research by **Đoko Banđur, Miloš Banđur and Aleksandar Mićić** for *Interpreting Frozen-Feature Transfer in Vision Transformers: Positional Encoding and Checkpoint Alignment*.
 
-> **Release preparation:** Numerical v1.2.0 is verified and prepared for upload as a new version of the existing Zenodo record. The version-specific v1.2.0 DOI has **not yet been issued**. Until that publication, the currently published Zenodo/GitHub release remains **v1.1.0**. This is a staging branch; do not merge into `main` until the new Zenodo version is published and its DOI added.
+> **Published numerical release: v1.2.0** — [Zenodo record](https://doi.org/10.5281/zenodo.23986036), published 5 November 2026. The ZIP contains numerical evidence and analysis code; journal manuscript and supplement are separate outputs.
 
+- **Version-specific v1.2.0 DOI:** https://doi.org/10.5281/zenodo.23986036
 - **Existing all-versions DOI:** https://doi.org/10.5281/zenodo.20368592
-- **Previous published release:** [Zenodo v1.1.0](https://doi.org/10.5281/zenodo.23696781) · [GitHub v1.1.0](https://github.com/djokobandjur/vit-pe-transfer/releases/tag/v1.1.0)
+- **Previous numerical release:** [Zenodo v1.1.0](https://doi.org/10.5281/zenodo.23696781) · [GitHub v1.1.0](https://github.com/djokobandjur/vit-pe-transfer/releases/tag/v1.1.0)
 - **v1.2.0 numerical archive filename:** `TRANSREP_EXPERIMENTAL_REPRODUCIBILITY_v1.2.0_PUBLIC_RELEASE_2026-11-05.zip`
 - **v1.2.0 archive SHA-256:** `3f7c4b8ce21df74a78f685dbcdd2827a3976d2c7bbf8f20a485e7df85d9f3404`
 - **Release documentation:** [Data map](transrep/RESULTS_MAP.md) · [Coverage and limitations](transrep/REPRODUCIBILITY_SCOPE.md) · [Manifest](transrep/RELEASE_MANIFEST.json) · [Release notes](transrep/RELEASE_NOTES_v1.2.0.md)
@@ -26,7 +27,7 @@ These results concern the tested configurations and comparison rules, not a caus
 
 The v1.2.0 ZIP contains the original 30 task-level endpoint-matching observations and selection record, 120 k-NN model–task results, full archived longitudinal sensitivity tables, twelve H200 training histories and checkpoint audit records, six earlier RoPE training histories, per-image predictions, recorded model/checkpoint identities, and scripts to reaggregate numerical findings and build figures.
 
-After publication, download the v1.2.0 ZIP from its **version-specific Zenodo record**. Extract it and run:
+Download the v1.2.0 ZIP from its [version-specific Zenodo record](https://doi.org/10.5281/zenodo.23986036). Extract it and run:
 
 ```bash
 cd TRANSREP_experimental_reproducibility_v1.2.0
@@ -47,6 +48,6 @@ Authors' original code is under **MIT**; included numerical records and generate
 
 ## Citation
 
-For the expanded numerical archive, cite the **specific v1.2.0 Zenodo version DOI once published**, naming all three creators. The all-versions DOI remains `10.5281/zenodo.20368592`. Until then, the available fixed version is [v1.1.0](https://doi.org/10.5281/zenodo.23696781).
+For the expanded numerical archive, cite the published version-specific DOI **10.5281/zenodo.23986036**, naming all three creators. The all-versions DOI remains `10.5281/zenodo.20368592`. The prior numerical version [v1.1.0](https://doi.org/10.5281/zenodo.23696781) remains independently citable.
 
 The journal manuscript and supplementary article are separate research outputs; neither is placed in this reproducibility repository.
