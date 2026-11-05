@@ -2,7 +2,7 @@
 
 This folder indexes **numerical evidence, source code and reproducibility metadata** for *Interpreting Frozen-Feature Transfer in Vision Transformers: Positional Encoding and Checkpoint Alignment* by Đoko Banđur, Miloš Banđur and Aleksandar Mićić.
 
-**Release staging (not yet published):** version 1.2.0 content is verified. The new Zenodo version DOI will be provided after publishing it as a new version of the existing deposit. Current published version: [v1.1.0](https://doi.org/10.5281/zenodo.23696781). Concept DOI (all versions): https://doi.org/10.5281/zenodo.20368592.
+**Published numerical v1.2.0:** [10.5281/zenodo.23986036](https://doi.org/10.5281/zenodo.23986036) (5 November 2026). Prior numerical release: [v1.1.0](https://doi.org/10.5281/zenodo.23696781). All-versions DOI: https://doi.org/10.5281/zenodo.20368592.
 
 The v1.2.0 ZIP on Zenodo, **not** the historical GitHub top-level result files, will contain the complete extended numerical evidence. See the [result-to-file map](RESULTS_MAP.md), [scope and limitations](REPRODUCIBILITY_SCOPE.md), [v1.2.0 manifest](RELEASE_MANIFEST.json), and [release notes](RELEASE_NOTES_v1.2.0.md).
 
