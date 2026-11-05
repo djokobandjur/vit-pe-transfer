@@ -1,33 +1,24 @@
-# Transferable Representations — experimental reproducibility
+# TRANSREP — numerical reproducibility files
 
-This directory indexes **experimental results and reproducibility code only** for *Interpreting Frozen-Feature Transfer in Vision Transformers: Positional Encoding and Checkpoint Alignment* (Đoko Banđur, Miloš Banđur and Aleksandar Mićić). No manuscript, supplementary article, cover letter, or internal editorial document is included.
+This folder indexes **numerical evidence, source code and reproducibility metadata** for *Interpreting Frozen-Feature Transfer in Vision Transformers: Positional Encoding and Checkpoint Alignment* by Đoko Banđur, Miloš Banđur and Aleksandar Mićić.
 
-**Zenodo all-versions DOI:** https://doi.org/10.5281/zenodo.20368592
+**Release staging (not yet published):** version 1.2.0 content is verified. The new Zenodo version DOI will be provided after publishing it as a new version of the existing deposit. Current published version: [v1.1.0](https://doi.org/10.5281/zenodo.23696781). Concept DOI (all versions): https://doi.org/10.5281/zenodo.20368592.
 
-**Published numerical archive (Zenodo v1.1.0):** [`TRANSREP_EXPERIMENTAL_REPRODUCIBILITY_v1.1_2026-10-27.zip`](https://zenodo.org/records/23696781). **Version DOI:** https://doi.org/10.5281/zenodo.23696781. The archive's displayed MD5 (`c5e221cf58aa1aec971ced849cdd8598`) matches the locally verified release ZIP.
+The v1.2.0 ZIP on Zenodo, **not** the historical GitHub top-level result files, will contain the complete extended numerical evidence. See the [result-to-file map](RESULTS_MAP.md), [scope and limitations](REPRODUCIBILITY_SCOPE.md), [v1.2.0 manifest](RELEASE_MANIFEST.json), and [release notes](RELEASE_NOTES_v1.2.0.md).
 
-## Evidence
+## Numerical verification
 
-- **Endpoint ImageNet-100:** four PE families × six ViT-Base models = 24 endpoints. Three seeds per family come from the earlier three-seed experimental record, and three further seeds per family extend the cohort under the same recipe.
-- **Longitudinal ImageNet-100:** six Learned and six RoPE training runs, 360 upstream measurements, 805 frozen-feature downstream records and 90 run-level primary comparisons at aligned accuracy.
-- **External ImageNet-1k:** nine fixed public DeiT-III model variants (Small/Base/Large × APE/Axial/Mixed 2D RoPE); 45 downstream prediction records.
-- **Layerwise/CKA:** 24 models, 13 readouts, 3,588 stored pairwise CKA values and 78 excess-divergence aggregates.
-- **Exploratory DeiT–Swin model systems:** 12 common-cache upstream prediction arrays (50,000 images each) and 60 downstream model-task prediction arrays. This is not an isolated positional-encoding test.
-
-The source figure package generates five main and one supplementary scientific plot from saved numeric records. [A section/figure → exact archived-file map](RESULTS_MAP.md) links each result to the deposited ZIP.
-
-## Replay
-
-After downloading and extracting the published v1.1 **Zenodo ZIP**, run:
+After obtaining and extracting `TRANSREP_EXPERIMENTAL_REPRODUCIBILITY_v1.2.0_PUBLIC_RELEASE_2026-11-05.zip`:
 
 ```bash
-cd TRANSREP_experimental_reproducibility_v1.1
+cd TRANSREP_experimental_reproducibility_v1.2.0
 python -m pip install numpy==2.3.5
 python scripts/verify_release.py
+python scripts/verify_training_histories.py
+python scripts/reaggregate_regime1_matching.py
+python scripts/reaggregate_last_crossing.py
 ```
 
-The published ZIP contains **2,760 verified payload files** and a full `SHA256SUMS` manifest. For figure reproduction see `figures/README.md` and its pinned `requirements.txt`. No source images or model weights are required for numerical reaggregation.
+The v1.2.0 release includes **2,962 checksum-inventoried files**, twelve complete H200 Learned/RoPE training histories, twelve checkpoint audit records, six historic original RoPE training histories, and the seed-level exploratory endpoint matching evidence. It does not include the full checkpoint weights, source images, full CKA source arrays, manuscript or supplementary article.
 
-The exploratory checkpoint-matching analysis in Section 4.2 has **task-level summaries**, but the original 30 per-pair records are not included. Large source CKA activation arrays, datasets and full trained-model weights are also excluded; relevant identities are in metadata. See [REPRODUCIBILITY_SCOPE.md](REPRODUCIBILITY_SCOPE.md).
-
-The [repository root README](../README.md) now summarizes the current TRANSREP evidence. The historical three-seed study remains available at the immutable [v1.0.1 GitHub tag](https://github.com/djokobandjur/vit-pe-transfer/tree/v1.0.1) and [Zenodo v1.0.1](https://doi.org/10.5281/zenodo.20368593). Historical authorship and previously granted licenses are not rescinded.
+The prior three-seed study remains available at [v1.0.1](https://github.com/djokobandjur/vit-pe-transfer/tree/v1.0.1); its historical permissions are unchanged.
