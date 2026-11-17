@@ -1,13 +1,31 @@
-# Reproducibility scope — numerical v1.2.0
+# Reproducibility scope — published numerical v1.3.0
 
-Published Zenodo version: https://doi.org/10.5281/zenodo.23986036; all-versions DOI: https://doi.org/10.5281/zenodo.20368592.
+**Exact archived release:** https://doi.org/10.5281/zenodo.24325778  
+**Latest-version entry point:** https://doi.org/10.5281/zenodo.20368592
 
-The released ZIP supports independently verifying file checksums, reaggregating saved individual model predictions and downstream metrics, reconstructing figures, and checking stored training-history metadata, without source images or GPUs.
+This repository holds historical source code and a **documentation index**. The reproducibility distribution is the **Zenodo ZIP**; it is not fully checked out in GitHub.
 
-**Included:** observations for 24 ImageNet-100 ViT-B endpoints, six-pair endpoint matching (30 individual downstream values), 360 H200 longitudinal upstream measurements, 805 downstream probes, twelve complete 300-epoch H200 training histories and twelve checkpoint audit records, six historical RoPE training histories, original 120 k-NN results, nine public-model downstream prediction sets (45 model–task records), 3,588 CKA pairwise similarities, 78 depth/CKA aggregates, and exploratory 12-model DeiT–Swin records. Supplementary sensitivity summaries and figure reconstruction programs are included.
+## Supported without training or GPUs
 
-**Not included:** source datasets and original ImageNet images, full endpoint/longitudinal checkpoint weight binaries, full CKA activation matrices, journal manuscript, supplementary article, or an authenticated machine-by-machine historical execution snapshot. Model identities and recorded checkpoint SHA-256 hashes are supplied where available.
+From the extracted Zenodo v1.3.0 archive, `bash verify_release_all.sh /path/to/new/output` checks:
 
-The first-crossing matched-upstream analysis uses **interpolation of downstream scalar scores** between evaluated checkpoint endpoints, not interpolation or retraining of weights. Reused numeric seed names are not randomized pairing blocks. Image-bootstrap intervals for fixed public checkpoints measure test-image sampling variability, not run-to-run training variability. The exploratory DeiT–Swin comparison concerns full model systems.
+1. Root and nested core SHA-256 inventories.
+2. Historical core stored-record calculations, available prediction-level analyses and selected training/provenance summaries.
+3. Longitudinal L, cohort E FINAL300 readouts, C/L/E synthesis and exploratory H and paired L75→L78 calculations.
+4. E FINAL300 upstream 12-row CSV statistical consistency and family contrasts.
+5. Cohort C B4-C 1,560-score CSV aggregation: **65 D**, **130 direct PE contrasts**, and associated group means, compared with stored tables.
 
-The six historical RoPE histories originate from earlier experiments; two have five missing logged entries each, which have **not been imputed**. The original endpoints and separate H200 longitudinal models are different training cohorts. Any further re-training or inference requires external dependencies and files not contained in the numerical ZIP.
+Install the archive-root `requirements-numerical.txt` first. Generated files/logs belong outside the extracted release tree. A verification PASS indicates agreement of **the specific supplied numerical records and computations**, not an independent retraining or authentication of full experimental origin.
+
+## Not supplied by the portable ZIP
+
+- Raw ImageNet or downstream benchmark images, checkpoint weights, full extracted features or CKA activations.
+- The complete external B4-C REPLAY128 source tree and its original raw MAP execution environment.
+- End-to-end training, feature extraction, refitting of probes, or exact regeneration of every historical figure.
+- All original cohort-E training history JSONs. The additional FINAL300 upstream result is a **CSV-only publication** whose statistical summary can be recomputed; original histories remain in the authors' project records. Inherited earlier RoPE histories in the core archive are not a full 12-model E300 history set.
+
+## Interpretation and attribution
+
+The L matched-upstream analysis uses scalar-score interpolation across evaluated checkpoints; no weights are interpolated. The same numeric seed labels across PE families do not establish an experimental pairing block. Public fixed-model image-bootstrap intervals reflect image sampling, not training-run variation. Post hoc H and cross-cohort C/E comparisons are exploratory; C and E are **separate training cohorts**, not time points of the same models.
+
+The archive and GitHub repository are subject to their recorded **MIT** software / **CC BY 4.0** generated-record notices and separate third-party/data rights. Historic material is preserved rather than rewritten.

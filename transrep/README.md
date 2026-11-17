@@ -1,24 +1,31 @@
-# TRANSREP — numerical reproducibility files
+# TRANSREP — published numerical-reproducibility index
 
-This folder indexes **numerical evidence, source code and reproducibility metadata** for *Interpreting Frozen-Feature Transfer in Vision Transformers: Positional Encoding and Checkpoint Alignment* by Đoko Banđur, Miloš Banđur and Aleksandar Mićić.
+**Current published archive:** [Zenodo v1.3.0](https://doi.org/10.5281/zenodo.24325778), 17 November 2026.
 
-**Published numerical v1.2.0:** [10.5281/zenodo.23986036](https://doi.org/10.5281/zenodo.23986036) (5 November 2026). Prior numerical release: [v1.1.0](https://doi.org/10.5281/zenodo.23696781). All-versions DOI: https://doi.org/10.5281/zenodo.20368592.
+- **All-versions DOI:** https://doi.org/10.5281/zenodo.20368592
+- **This exact release:** https://doi.org/10.5281/zenodo.24325778
+- **Prior published v1.2.0:** https://doi.org/10.5281/zenodo.23986036
 
-The v1.2.0 ZIP on Zenodo, **not** the historical GitHub top-level result files, will contain the complete extended numerical evidence. See the [result-to-file map](RESULTS_MAP.md), [scope and limitations](REPRODUCIBILITY_SCOPE.md), [v1.2.0 manifest](RELEASE_MANIFEST.json), and [release notes](RELEASE_NOTES_v1.2.0.md).
+This directory is a **GitHub documentation index** for the full **Zenodo numerical ZIP**; it is not the full v1.3.0 archive itself. The top-level GitHub files remain primarily historical earlier-study code and data.
 
-## Numerical verification
+- [Results and archive paths](RESULTS_MAP.md)
+- [Supported and unsupported reproduction](REPRODUCIBILITY_SCOPE.md)
+- [v1.3.0 release metadata and checksum](RELEASE_MANIFEST_v1.3.0.json)
+- [v1.3.0 release notes](RELEASE_NOTES_v1.3.0.md)
+- [Historical v1.2.0 manifest](RELEASE_MANIFEST.json) and [release notes](RELEASE_NOTES_v1.2.0.md)
+- [Licensing and source rights](LICENSE.md)
 
-After obtaining and extracting `TRANSREP_EXPERIMENTAL_REPRODUCIBILITY_v1.2.0_PUBLIC_RELEASE_2026-11-05.zip`:
+## Reproduce score-level analyses
+
+Download and extract the [Zenodo v1.3.0 ZIP](https://doi.org/10.5281/zenodo.24325778), then from its top-level extracted directory run:
 
 ```bash
-cd TRANSREP_experimental_reproducibility_v1.2.0
-python -m pip install numpy==2.3.5
-python scripts/verify_release.py
-python scripts/verify_training_histories.py
-python scripts/reaggregate_regime1_matching.py
-python scripts/reaggregate_last_crossing.py
+python -m pip install -r requirements-numerical.txt
+bash verify_release_all.sh /tmp/transrep-v13-check
 ```
 
-The v1.2.0 release includes **2,962 checksum-inventoried files**, twelve complete H200 Learned/RoPE training histories, twelve checkpoint audit records, six historic original RoPE training histories, and the seed-level exploratory endpoint matching evidence. It does not include the full checkpoint weights, source images, full CKA source arrays, manuscript or supplementary article.
+Supply a new output path outside the archive. This checks file integrity, the inherited core numerical release, L/B4-E/synthesis and exploratory calculations, the E300 upstream twelve-row CSV, and 65 + 130 B4-C CSV-derived contrasts. These are **CPU-only numerical verifications**, not original training or GPU-extraction replays.
 
-The prior three-seed study remains available at [v1.0.1](https://github.com/djokobandjur/vit-pe-transfer/tree/v1.0.1); its historical permissions are unchanged.
+The archived v1.3.0 distribution omits model weights, source images, large feature arrays and the full original execution tree. The E FINAL300 additional upstream measurements are supplied as a CSV, and the checker recomputes its statistics rather than independently verifying their original history-to-checkpoint provenance.
+
+The [v1.0.1 historical source snapshot](https://github.com/djokobandjur/vit-pe-transfer/tree/v1.0.1) remains accessible; historical permissions are unchanged.

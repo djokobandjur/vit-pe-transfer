@@ -1,22 +1,32 @@
-# Scientific results → numerical v1.2.0 archive
+# Scientific result → published numerical v1.3.0 source map
 
-**Published archive:** [Zenodo v1.2.0](https://doi.org/10.5281/zenodo.23986036), version DOI `10.5281/zenodo.23986036`. Existing Zenodo concept DOI: https://doi.org/10.5281/zenodo.20368592. The paths below are **inside** the extracted `TRANSREP_experimental_reproducibility_v1.2.0/` directory, not GitHub paths.
+**Published version DOI:** https://doi.org/10.5281/zenodo.24325778  
+**All-versions DOI:** https://doi.org/10.5281/zenodo.20368592
 
-| Evidence in article | Source in the numerical ZIP | Scope |
+**Path convention:** all paths below are **inside** the extracted `TRANSREP_NUMERICAL_REPRODUCIBILITY_v1.3.0/` folder of the Zenodo ZIP, **not** paths in this GitHub repository. Historical subdirectory names are retained for traceability, even where they contain older local working-version labels.
+
+| Evidence / analysis | Location inside v1.3.0 ZIP | Reproducibility boundary |
 | --- | --- | --- |
-| Endpoint ImageNet-100, Figure 2 | `data/regime1/upstream_accuracy.csv`, `data/regime1/upstream_downstream_joined.csv`, `data/regime1/linear_probe/` | 24 models × 5 downstream tasks |
-| Exploratory six-seed endpoint matching (§4.2) | `data/regime1/matching/matching_lock.json`, `data/regime1/matching/matched_30_pairs.csv`; `scripts/reaggregate_regime1_matching.py` | Six selected RoPE snapshots and 30 individual task metrics |
-| Longitudinal matched accuracy, Figure 3(a–d) | `data/regime2/upstream_360.csv`, `data/regime2/all_805_scores.csv`, `data/regime2/primary_fixed3_seed_pairs_90.csv`; `scripts/verify_release.py` | 360 upstream scores, 805 probes, 90 target–task–seed comparisons |
-| Equal-epoch transfer, Figure 3(e) | `data/regime2/secondary_same_epoch_seed_pairs_300.csv`, `data/regime2/secondary_same_epoch_summary_50.csv` | 50 task–epoch mean comparisons |
-| Longitudinal training histories and audits | `data/regime2/training_runs/`, `metadata/training_audits/`; `scripts/verify_training_histories.py` | Twelve 300-epoch histories, 360 recorded checkpoint SHA-256 identifiers |
-| Earlier original RoPE training histories | `data/regime1/historical_rope_histories/` | Six supplied histories; ten total logged entries missing in two runs, not reconstructed |
-| Upstream-alignment sensitivity | `data/regime2/sensitivity/`; `scripts/reaggregate_last_crossing.py`, `scripts/reaggregate_s2d_betweenness.py` | First/last crossing and conditional bracketing checks |
-| Original cosine k-NN | `outputs/knn/`; `scripts/verify_knn_s4.py` | 120 original model–task records |
-| Public DeiT-III panel, Figure 4 | `data/regime3/`, `data/regime3/analysis/` | Nine models, 45 model–task prediction files |
-| Layerwise transfer and CKA, Figure 5 | `data/depth/`, `data/cka/`; `metadata/external_cka_feature_manifest.json` | Thirteen readouts, 3,588 CKA pairs and 78 aggregates |
-| Exploratory DeiT–Swin | `data/step9/` | Twelve whole-model system records; no isolated PE interpretation |
-| Main/Supplementary figure reconstruction | `figures/figure_data/`, `figures/build_figures.py`, `figures/build_figures_4_5.py`, `figures/build_supplement_figure.py`, `figures/build_figure_s2_k1.py` | Five main figures and Supplementary Figures S1/S2 |
+| Earlier E endpoint transfer, upstream, k-NN and CKA | `reproducibility/01_core_numerical_v1.2.0_WORKING/data/regime1/`, `data/cka/` and `outputs/` | Earlier numerical records; source archive is a historical working extension, not identical to the published v1.2.0 ZIP. |
+| Longitudinal L upstream checkpoint scores and transfer | `reproducibility/01_core_numerical_v1.2.0_WORKING/data/regime2/` | Saved checkpoint-level and transfer observations; prior verification scripts retained in nested archive. |
+| Public DeiT-III ImageNet-1k panel P | `reproducibility/01_core_numerical_v1.2.0_WORKING/data/regime3/` | Fixed public-checkpoint scores and available prediction records. |
+| Completed-schedule cohort C | `reproducibility/02_cohort_C/` | Source Step 08 probe records, aggregates and provenance. |
+| Cohort C readout/depth B4-C | `reproducibility/03_B4C_CORE_MAP/B4_MAP_1560_seed_level.csv` | 1,560 model-level scores; score-level reaggregation only. |
+| C token-readout D and direct PE contrasts | `reproducibility/03_B4C_CORE_MAP/recompute_b4c_from_seed_csv.py` | Recomputes 65 D and 130 PE contrasts and checks archived CSVs; original REPLAY128 raw replay requires external records. |
+| L Oxford-IIIT Pets depth readouts, K | `reproducibility/04_L_READOUT/` | 288 refitted depth probes and available run-level results. |
+| E FINAL300 readout D/K | `reproducibility/05_B4E_FINAL300/` | 240 archived probe records across selected depths/readouts. |
+| C/L/E derived comparisons | `reproducibility/06_synthesis_and_derived/` | Saved numerical cross-cohort analysis; exploratory comparisons are not longitudinal tracking of identical models. |
+| Protocol and execution provenance | `reproducibility/07_protocols_and_execution/` | Selected recorded source methods and metadata; full original runtime tree not redistributed. |
+| E FINAL300 upstream validation | `reproducibility/08_E300_UPSTREAM_VALIDATION/` | Twelve-row published model-level CSV and statistical arithmetic; original full histories kept by authors. |
+| Exploratory H and paired L75→L78 | `reproducibility/09_v0857_exploratory/` | Post hoc, clearly distinguished from primary locked analyses. |
 
-## Verification and boundaries
+## Unified verification
 
-`SHA256SUMS`: 2,962 payload files; `figures/SHA256SUMS.txt`: 44 figure-subdirectory files. `scripts/verify_release.py` and `scripts/verify_training_histories.py` verify saved numerical records and selected recomputations **without GPU**. The ZIP does not include datasets, model weight binaries or the full CKA feature arrays; not all model training and feature extraction can be independently rerun from its contents.
+In the extracted Zenodo ZIP:
+
+```bash
+python -m pip install -r requirements-numerical.txt
+bash verify_release_all.sh /tmp/transrep-v13-check
+```
+
+The root `SHA256SUMS.txt` covers **3,511 files**; the ZIP contains **3,512 members** including the manifest itself. For the full supported scope, see [REPRODUCIBILITY_SCOPE.md](REPRODUCIBILITY_SCOPE.md). No weight files, raw benchmark images or large original feature arrays are redistributed.

@@ -1,0 +1,26 @@
+{
+  "release_title": "TRANSREP Numerical Reproducibility v1.3.0",
+  "release_version": "1.3.0",
+  "publication_date": "2026-11-17",
+  "zenodo_concept_doi": "10.5281/zenodo.20368592",
+  "zenodo_version_doi": "10.5281/zenodo.24325778",
+  "zenodo_record_url": "https://zenodo.org/records/24325778",
+  "previous_zenodo_version_doi": "10.5281/zenodo.23986036",
+  "archive_filename": "TRANSREP_NUMERICAL_REPRODUCIBILITY_v1.3.0_ZENODO_UPLOAD_READY_2026-11-17.zip",
+  "archive_size_bytes": 20868258,
+  "archive_sha256": "ed1a868f92fa65ad0c59959be26715024a3c320b8ad453f5eb6213dcf8412d0e",
+  "archive_md5": "67e1233d8478b7864555deef597f3fe8",
+  "zip_members": 3512,
+  "sha256_manifest_entries": 3511,
+  "experimental_numeric_files_changed_from_published_archive": false,
+  "complete_training_and_feature_replay_supported": false,
+  "e300_upstream_distributed_as": "12-row model-level CSV with CSV-only arithmetic verifier",
+  "full_original_E_histories_included": false,
+  "github_full_numerical_zip_duplicated": false,
+  "creators": [
+    "Đoko Banđur",
+    "Miloš Banđur",
+    "Aleksandar Mićić"
+  ],
+  "evidence_basis": "Published Zenodo v1.3.0 screenshot provided by authors; local ZIP SHA-256 and MD5 computed from the identical upload-ready file; matching MD5 observed in prepublication Zenodo preview."
+}
